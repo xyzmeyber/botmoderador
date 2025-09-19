@@ -35,7 +35,7 @@ async def main():
                 await event.delete()
                 print("🗑 Borrado: mensaje con IMPORTANTE")
 
-            elif "comando no está incluido en tu plan" in text:
+            elif "no permite este comando" in text:
                 await event.delete()
                 await event.respond(
                     "⚠️ Mejora tu plan para usar este comando.\nEscribe /buy para más información."
